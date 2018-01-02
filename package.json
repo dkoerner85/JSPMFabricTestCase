@@ -7,6 +7,21 @@
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
+    },
+    "overrides": {
+      "npm:fabric@2.0.0-rc.4": {
+        "map": {
+          "canvas": "@empty",
+          "fs": "@empty",
+          "jsdom/lib/jsdom/living/generated/utils": "@empty",
+          "jsdom/lib/jsdom/utils": "@empty",
+          "jsdom": "@empty",
+          "http": "@empty",
+          "https": "@empty",
+          "xmldom": "@empty",
+          "url": "@empty"
+        }
+      }
     }
   },
   "devDependencies": {
